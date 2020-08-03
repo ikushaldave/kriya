@@ -1,3 +1,4 @@
+@import url(https://pro.fontawesome.com/releases/v5.14.0/css/all.css);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -87,7 +88,7 @@ html {
 body {
   color: #484334;
   line-height: 1.5;
-  font-family: 'Rosario', sans-serif;
+  font-family: "Rosario", sans-serif;
 }
 
 .text-center {
@@ -110,12 +111,12 @@ h3 {
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
@@ -124,9 +125,13 @@ h6 {
 }
 
 p {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 500;
   line-height: 1.7;
+}
+
+strong {
+  font-weight: 700;
 }
 
 @media all and (max-width: 900px) {
@@ -188,6 +193,11 @@ p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.col {
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .col-1 {
@@ -255,6 +265,10 @@ p {
           column-gap: 2rem;
 }
 
+.span-2 {
+  grid-column: span 2;
+}
+
 *,
 *::before,
 *::after {
@@ -285,6 +299,14 @@ a {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
 .none {
   display: none;
 }
@@ -297,6 +319,39 @@ a {
   margin-top: 10px;
   color: #484338;
   border: 1px solid #a58251;
+}
+
+/* 
+    ========== margins ===========
+    mt - margin-top
+    mb - margin-bottom
+    ml - margin-left
+    mr - margin-right
+
+    mr-2 - margin-right: 2rem;
+*/
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.pr-2 {
+  padding-right: 2rem;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.p-2 {
+  padding: 2rem;
 }
 
 .header {
@@ -377,9 +432,9 @@ a {
 
 @media screen and (max-width: 1024px) {
   .header {
-    padding: 0.2rem;
+    padding: 0.5rem;
   }
-  .nav-items {
+  .header .nav-items {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -393,36 +448,36 @@ a {
     align-items: center;
     height: 100vh;
   }
-  .nav-items:hover {
+  .header .nav-items:hover {
     border: none;
   }
-  .nav {
+  .header .nav {
     display: none;
   }
-  .logo-wrapper {
+  .header .logo-wrapper {
     margin: 0;
   }
-  .hamburger-menu,
-  .register,
-  .logo-mobile {
+  .header .hamburger-menu,
+  .header .register,
+  .header .logo-mobile {
     display: inline-block;
   }
-  .hamburger-menu,
-  .register {
+  .header .hamburger-menu,
+  .header .register {
     position: static;
     padding: 1rem;
     font-size: 1.4rem;
     color: #fff;
   }
-  .hamburger-menu span {
+  .header .hamburger-menu span {
     display: block;
     width: 20px;
     border-bottom: 2px solid #fff;
   }
-  .hamburger-menu span:nth-child(even) {
+  .header .hamburger-menu span:nth-child(even) {
     margin: 5px 0;
   }
-  input[id="hamburger-menu"]:checked ~ nav {
+  .header input[id="hamburger-menu"]:checked ~ nav {
     display: inline-block;
     position: fixed;
     z-index: 11;
@@ -432,24 +487,142 @@ a {
     right: 0;
     background: rgba(126, 132, 70, 0.8);
   }
-  input[id="hamburger-menu"]:checked ~ label i::before {
+  .header input[id="hamburger-menu"]:checked ~ label i::before {
     content: "\f00d";
     font-size: 1.6rem;
   }
-  .nav-items__item {
+  .header .nav-items__item {
     margin: 0.5rem 0;
   }
-  .logo-wrapper {
+  .header .logo-wrapper {
     display: none;
   }
-  .hamburger-menu {
+  .header .hamburger-menu {
     position: relative;
     z-index: 12;
   }
-  .register {
+  .header .register {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+  }
+}
+
+.footer {
+  background-color: #d4ad76;
+}
+
+.footer h4 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer h5 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.footer strong {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.footer a {
+  color: #484334;
+}
+
+.footer i {
+  margin-right: 1rem;
+}
+
+.footer img {
+  display: inline-block;
+}
+
+.working-hour,
+.footer-contact-us {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer-hr {
+  display: inline-block;
+  padding: 1.5px 2.5rem;
+  border: none;
+  border-top: 1px dashed #55452f;
+  border-bottom: 1px solid #55452f;
+  margin-bottom: 2.5rem;
+}
+
+.footer-border-dashed {
+  margin: 1rem 0 2rem;
+  border: none;
+  border-bottom: 1px dashed #55452f;
+}
+
+.footer-about {
+  background-color: #c8a36f;
+}
+
+.footer-about p {
+  margin: 2rem 0;
+}
+
+.copyright {
+  background-color: #56462f;
+  color: #d4ad76;
+}
+
+.copyright .decor {
+  padding: 1rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.copyright img {
+  margin: 0 2rem;
+  width: 100%;
+  height: 24px;
+}
+
+.copyright .footer-hr {
+  padding: 0.1rem 80%;
+  border-top: 1px dashed #d4ad76;
+  border-bottom: 1px solid #d4ad76;
+  margin-bottom: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.copyright small {
+  display: block;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer .col-4 {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .footer .text-right {
+    text-align: left;
+  }
+  .footer .working-hour,
+  .footer .footer-contact-us {
+    padding: 2rem;
+  }
+  .footer .copyright img {
+    margin: 0 1rem;
+  }
+  .footer .copyright .footer-hr {
+    padding: 0.1rem 40%;
   }
 }
 /*# sourceMappingURL=main.css.map */
