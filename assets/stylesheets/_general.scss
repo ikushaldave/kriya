@@ -41,9 +41,10 @@ a {
 
 .btn {
 	text-transform: uppercase;
+	font-family: $body-font;
 	font-size: 1rem;
 	font-weight: 500;
-	padding: 1rem 2rem;
+	padding: 0.6rem 1.25rem;
 	margin-top: 10px;
 	color: #484338;
 	border: 1px solid #a58251;
@@ -101,6 +102,10 @@ a {
 	padding: 3rem 0;
 }
 
+.ptb-2 {
+	padding: 2rem 0;
+}
+
 // decor similar to copyright part refer footer html how to use that
 
 .decor {
@@ -133,4 +138,20 @@ a {
 			padding: 0.1rem 40%;
 		}
 	}
+}
+
+// Multiple line border decor
+
+.multiple-border-decor-hr {
+	border: none;
+	border-top: 1px dashed #55452f;
+	border-bottom: 1px solid #55452f;
+	margin: 2.5rem 0;
+	padding: 1.5px;
+}
+
+.dashed-border {
+	border: 0;
+	border-top: 1px dashed #55452f;
+	margin: 1rem 0;
 }
