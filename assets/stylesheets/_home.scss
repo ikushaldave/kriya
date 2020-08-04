@@ -1,0 +1,81 @@
+.home-main {
+	background-color: $bg-odd;
+
+	& section:nth-child(even) {
+		background-color: $bg-even;
+	}
+
+	@media screen and (max-width: 1024px) {
+		.col-2 {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}
+
+.type-of-yogas {
+	h5 {
+		font-size: 1.1rem;
+		width: 80%;
+		margin: 0 auto;
+		font-weight: 300;
+	}
+}
+
+.yogas {
+	flex-flow: row wrap;
+
+	.yoga-icon {
+		width: 82px;
+		height: 82px;
+		background-color: #e2ddcf;
+		border-radius: 50%;
+
+		img {
+			width: 68px;
+		}
+
+		&:hover {
+			background-color: $bg-header;
+		}
+	}
+}
+
+.yogas-feature-image {
+	height: 500px;
+	text-align: right;
+	background: url(/assets/images/Home/main-intro-leaf.png) no-repeat;
+	background-position: -2px 0;
+	justify-content: flex-end;
+
+	img {
+		width: 350px;
+		height: 350px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.yogas {
+		flex-flow: column nowrap;
+		height: 500px;
+	}
+
+	.yoga:nth-child(1n + 5) {
+		display: none;
+	}
+
+	.yoga {
+		justify-content: space-between;
+
+		div {
+			margin-left: 6rem;
+			letter-spacing: 2px;
+		}
+	}
+
+	.yogas-feature-image {
+		order: -1;
+		img {
+			width: 100%;
+		}
+	}
+}

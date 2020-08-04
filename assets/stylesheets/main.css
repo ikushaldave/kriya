@@ -182,6 +182,12 @@ strong {
           align-items: center;
 }
 
+.col-1-2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 49%;
+          flex: 0 1 49%;
+}
+
 .grid {
   display: -ms-grid;
   display: grid;
@@ -269,6 +275,10 @@ strong {
   grid-column: span 2;
 }
 
+.span-3 {
+  grid-column: span 3;
+}
+
 *,
 *::before,
 *::after {
@@ -330,6 +340,14 @@ a {
 
     mr-2 - margin-right: 2rem;
 */
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
 .mt-6 {
   margin-top: 6rem;
 }
@@ -352,6 +370,14 @@ a {
 
 .p-2 {
   padding: 2rem;
+}
+
+.pt-7 {
+  padding-top: 7rem;
+}
+
+.ptb-3 {
+  padding: 3rem 0;
 }
 
 .decor {
@@ -627,6 +653,95 @@ a {
   .footer .working-hour,
   .footer .footer-contact-us {
     padding: 2rem;
+  }
+}
+
+.home-main {
+  background-color: #f5f0e3;
+}
+
+.home-main section:nth-child(even) {
+  background-color: #f2e9d2;
+}
+
+@media screen and (max-width: 1024px) {
+  .home-main .col-2 {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.type-of-yogas h5 {
+  font-size: 1.1rem;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+.yogas {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.yogas .yoga-icon {
+  width: 82px;
+  height: 82px;
+  background-color: #e2ddcf;
+  border-radius: 50%;
+}
+
+.yogas .yoga-icon img {
+  width: 68px;
+}
+
+.yogas .yoga-icon:hover {
+  background-color: #7e8446;
+}
+
+.yogas-feature-image {
+  height: 500px;
+  text-align: right;
+  background: url(/assets/images/Home/main-intro-leaf.png) no-repeat;
+  background-position: -2px 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.yogas-feature-image img {
+  width: 350px;
+  height: 350px;
+}
+
+@media screen and (max-width: 1024px) {
+  .yogas {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    height: 500px;
+  }
+  .yoga:nth-child(1n + 5) {
+    display: none;
+  }
+  .yoga {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .yoga div {
+    margin-left: 6rem;
+    letter-spacing: 2px;
+  }
+  .yogas-feature-image {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .yogas-feature-image img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

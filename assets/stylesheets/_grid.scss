@@ -59,3 +59,7 @@
 .span-2 {
 	@include span(2);
 }
+
+.span-3 {
+	@include span(3);
+}
