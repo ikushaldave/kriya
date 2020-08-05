@@ -699,9 +699,7 @@ a {
 }
 
 .home-main h5 {
-  font-size: 1.1rem;
-  width: 80%;
-  margin: 0 auto;
+  font-size: 1.025rem;
   font-weight: 300;
 }
 
@@ -737,6 +735,11 @@ a {
 .hero-text h3 {
   margin: 2rem auto;
   font-size: 1.25rem;
+}
+
+.hero-text .cta-btn {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .hero-text .cta-btn:hover {
@@ -898,6 +901,8 @@ a {
 }
 
 .call-to-action {
+  max-width: 1500px;
+  margin: 0 auto;
   background-color: white;
   background: url(/assets/images/Home/parallax-decor.png) no-repeat;
   background-size: cover;
@@ -940,6 +945,8 @@ a {
   margin-left: 1rem;
   background-color: #ffda6b;
   color: #484334;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .call-to-action .cta-btn:hover {
@@ -1224,6 +1231,11 @@ a {
 
 .feature-users i {
   font-size: 1.5rem;
+}
+
+.gallery {
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .gallery-info {
