@@ -445,8 +445,8 @@ a {
 }
 
 .header {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(126, 132, 70, 0.95)), to(rgba(126, 132, 70, 0.95))), url(/assets/images/0.5x/Asset-2.png);
-  background: linear-gradient(to right, rgba(126, 132, 70, 0.95), rgba(126, 132, 70, 0.95)), url(/assets/images/0.5x/Asset-2.png);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(126, 132, 70, 0.95)), to(rgba(126, 132, 70, 0.95))), url(../images/0.5x/Asset-2.png);
+  background: linear-gradient(to right, rgba(126, 132, 70, 0.95), rgba(126, 132, 70, 0.95)), url(../images/0.5x/Asset-2.png);
   position: fixed;
   top: 0;
   left: 0;
@@ -711,7 +711,7 @@ a {
 }
 
 .hero {
-  background: url(/assets/images/pattern-chakras-alt-color.jpg);
+  background: url(../images/pattern-chakras-alt-color.jpg);
 }
 
 .hero .container {
@@ -888,7 +888,7 @@ a {
 .yogas-feature-image {
   height: 500px;
   text-align: right;
-  background: url(/assets/images/Home/main-intro-leaf.png) no-repeat;
+  background: url(../images/Home/main-intro-leaf.png) no-repeat;
   background-position: -2px 0;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -904,7 +904,7 @@ a {
   max-width: 1500px;
   margin: 0 auto;
   background-color: white;
-  background: url(/assets/images/Home/parallax-decor.png) no-repeat;
+  background: url(../images/Home/parallax-decor.png) no-repeat;
   background-size: cover;
   background-position: 0 -80px;
 }
@@ -1373,8 +1373,8 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(126, 132, 70, 0.99)), to(rgba(126, 132, 70, 0.99))), url(/assets/images/0.5x/Asset-2.png);
-  background: linear-gradient(to right, rgba(126, 132, 70, 0.99), rgba(126, 132, 70, 0.99)), url(/assets/images/0.5x/Asset-2.png);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(126, 132, 70, 0.98)), to(rgba(126, 132, 70, 0.98))), url(../images/0.5x/Asset-2.png);
+  background: linear-gradient(to right, rgba(126, 132, 70, 0.98), rgba(126, 132, 70, 0.98)), url(../images/0.5x/Asset-2.png);
   z-index: 100;
 }
 
