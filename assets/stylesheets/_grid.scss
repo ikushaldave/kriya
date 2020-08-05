@@ -2,8 +2,8 @@
 	display: grid;
 }
 .grid-center {
-	justify-self: center;
-	align-self: center;
+	justify-items: center;
+	align-items: center;
 }
 
 @mixin span($num) {
