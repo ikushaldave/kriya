@@ -1,4 +1,9 @@
 .about-us {
+    .buttons {
+        @media screen and (max-width: 1024px) {
+            text-align: right;
+        }
+    }
     .btn {
         text-transform: uppercase;
         font-size: 1rem;
@@ -42,14 +47,21 @@
             transform: rotate(0deg) scaleX(1.2);
             opacity: 1;
         }
+        @media screen and (max-width: 1024px) {
+            margin: 0 1rem;
+        }
     }
     .about-secondary-btn {
         background-color: #484338;
         color: #f2e9d2;
         margin-top: 0.6rem;
         margin-right: 2rem;
+        @media screen and (max-width: 1024px) {
+            margin: 0 1rem 0.8rem;
+        }
     }
 }
+
 
 
 .about-main-title-bg {

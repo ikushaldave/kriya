@@ -1,0 +1,29 @@
+.register-page,
+.contact-page {
+	form {
+		input {
+			padding: 12px 18px;
+			width: 100%;
+			margin-top: 20px;
+			outline: none;
+			border: 1px solid $text-color;
+			background-color: transparent;
+		}
+
+		textarea {
+			width: 100%;
+			margin-top: 15px;
+			padding: 12px 18px;
+			outline: none;
+			background-color: transparent;
+		}
+		button {
+			color: white;
+			background-color: $bg-header;
+		}
+		button:hover {
+			background-color: $hover-color;
+			cursor: pointer;
+		}
+	}
+}
