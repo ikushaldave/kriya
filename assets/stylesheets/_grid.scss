@@ -9,6 +9,13 @@
 @mixin span($num) {
 	grid-column: span $num;
 }
+.span-2 {
+	@include span(2);
+}
+
+.span-3 {
+	@include span(3);
+}
 
 // columns
 .col {
