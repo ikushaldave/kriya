@@ -4,7 +4,7 @@
 			rgba($bg-header, 0.95),
 			rgba($bg-header, 0.95)
 		),
-		url(/assets/images/0.5x/Asset-2.png);
+		url(../images/0.5x/Asset-2.png);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -34,7 +34,7 @@
 .nav-items {
 	justify-content: space-between;
 	.logo-wrapper {
-		margin: 0 5px;
+		margin: 0 15px;
 		.logo {
 			padding: 6px 0;
 	
@@ -54,7 +54,7 @@
 .register {
 	position: absolute;
 	// top: 26px;
-	right: 1rem;
+	right: 15rem;
 	color: #fff;
 	font-size: 1rem;
 	width: 30px;

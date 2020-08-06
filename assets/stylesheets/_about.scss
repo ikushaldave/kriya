@@ -1,6 +1,8 @@
-
-.about-bg-wrapper {
+.about-main-title-bg {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/About/breadcrumb-img-about.jpg);
+}
+
+.main-title-bg-wrapper {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -16,12 +18,12 @@
         font-family: $heading-font;
       
     }
-    .about-item {
+    .sub-menu-item {
         font-size: 1.2rem;
         color: $bg-odd;
         // margin-right: 0.5rem;
     }
-    .about-item a {
+    .sub-menu-item a {
         font-size: 1.2rem;
         color: $bg-header;
         margin-right: 0.5rem;
@@ -35,7 +37,7 @@
     }
     @media screen and (max-width: 1024px) {
         text-align: center;
-            .about-menu {
+            .sub-menu {
                 display: flex;
                 justify-content: center;
             }
@@ -90,9 +92,6 @@
 }
 // =====================
 
-// .about-article {
-//     margin-right: 2rem;
-// }
 // scaling of border-cards
 .outer-frame {
     padding: 0.7rem;
@@ -109,9 +108,9 @@
 
     &::before {
         bottom: 0;
-        left: 23px;
+        left: 25px;
         right: 0;
-        top: 23px;
+        top: 25px;
         border-color: rgba(0,0,0,0.1);
      }
     &::after {
@@ -138,14 +137,17 @@
     border-color: #a58251;
 }
 // ======================
+
 .article-text {
     margin-top: 2rem;
 }
 .about-text {
     font-size: 1rem;
-    flex: 0 1 75%;
+    flex: 0 1 70%;
 }
-
+.fa-chevron-right {
+    margin-left: 0.5rem;
+}
 
 // Left -Column About kriya article
 .achievement {
@@ -160,6 +162,7 @@
     .status-img {
         width: 2.6rem;
         margin-top: 1rem;
+        height: auto;
     }
 
     .about-left-col {
@@ -216,20 +219,7 @@
     flex-wrap: wrap;
 }
 .about-team {
-    margin-top: 2rem;
-    .pattern-bg {
-        margin: 0;
-        overflow: hidden;
-        padding: 0;
-        position: relative;
-        background-color: #fff;
-        background-image: url(../images/pattern-grudge.png);
-        background-repeat: repeat;
-        &:hover {
-            background-color: $hover-color;
-        }
-    }
-    
+    margin-top: 2rem; 
     .team-member-img {
         font-size: 0px;
     }
@@ -257,6 +247,18 @@
         }
     }
     
+}
+.pattern-bg {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    background-color: #fff;
+    background-image: url(../images/pattern-grudge.png);
+    background-repeat: repeat;
+    &:hover {
+        background-color: $hover-color;
+    }
 }
 .member-name,
 .benefit-heading {
