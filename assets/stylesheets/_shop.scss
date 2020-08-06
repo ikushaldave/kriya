@@ -1,0 +1,274 @@
+.shop {
+    .btn{
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 0.8rem 1.2rem;
+        border: 1px solid transparent;
+        overflow: hidden;
+
+    }
+    .primary-btn {
+        color: #484338;
+        border-color: #a58251;;
+        background-color: $hover-color;
+        margin-top: 0.6rem;
+        background-image: url(../images/pattern-grudge.png);
+        background-repeat: repeat;
+        position: relative;
+        transition: all 0.03s;
+        z-index: 1;
+        &:hover {
+            border-color: #a58251;
+            color: #484338;
+        }
+        &::before {
+            background-image: url(../images/pattern-grudge.png);
+            background-repeat: repeat;
+            background-color: #fff;
+            transition: all 0.03s;
+            transform: rotate(0deg) scaleX(3);
+            transform-origin: 0% 100%;
+            content: "";
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+        }
+        &:hover::before {
+            height: 0%;
+            transform: rotate(0deg) scaleX(1.2);
+            opacity: 1;
+        }
+    }
+    .about-secondary-btn {
+        background-color: #484338;
+        color: #f2e9d2;
+        margin-top: 0.6rem;
+        margin-right: 2rem;
+    }
+}
+// SHOP TITLE
+.shop-main-title-bg {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/Shop/bg-shop.jpg);
+}
+
+// Header-Ecommerce
+
+.ecommerce-product-header {
+    background-color: $bg-even;
+    padding-top: 5rem;
+    .ecommerce-text {
+        font-size: 1rem;
+        color: $text-color;
+    }
+    .selection-box {
+        position: relative;
+        @media screen and (max-width: 1024px) {
+           margin-top: 1rem;
+        }
+        &::before,
+        &::after {
+            content: "";
+            pointer-events: none;
+            position: absolute;
+            border-left: 0.3rem solid transparent;
+            border-right: 0.3rem solid transparent;
+            right: 1rem;
+            height: 0;
+            margin: auto;
+            z-index: 1;
+        }
+        &::before {
+            border-top: 7px solid;
+            bottom: -11px;
+            top: 0;
+        }
+        &::after {
+            border-bottom: 7px solid;
+            bottom: 0;
+            top: -11px;
+        }
+    }
+    .orderby {
+        font-size: 1rem;
+        border: 1px solid;
+        color: $text-color;
+        width: 100%;
+        margin: 0;
+        padding: 1rem 3rem 1rem 1rem;
+        appearance: none;
+        cursor: pointer;
+        text-indent: 0.01px;
+        border-color: rgba(165,130,81,.3);
+        background: $bg-even;
+        @media screen and (max-width: 1024px) {
+            padding: 0.5rem 0 0.5rem 0.5rem;
+        }
+    }
+}
+
+// PRODUCT CARDS
+.ecommerce-product-cards {
+    background-color: $bg-even;
+}
+.cards-wrapper {
+    padding: 3rem 0;
+    @media screen and (max-width: 1024px) {
+        padding: unset;
+    }
+}
+.product-card {
+    background-color: $bg-even;
+    @media screen and (max-width: 1024px) {
+        padding: 1rem;
+    }
+}
+.card-pattern-bg {
+    margin: 0;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    background-color: #e5dbc1;
+    background-image: url(../images/pattern-grudge.png);
+    background-repeat: repeat;
+    &:hover {
+        background-color: $hover-color;
+    }
+}
+
+.product-img {
+    font-size: 0px;
+    &:hover {
+        background: $hover-color;
+        opacity: 0.8;
+    }
+}
+.product-detail {
+    text-align: center;
+    padding: 1rem;
+    .product-name {
+        font-size: 1rem;
+    }
+    .product-border {
+        width: 25%;
+        margin: 0 auto;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+// hover card -scaling of image
+.product-grid {
+    position: relative;
+    &:hover {
+        .product-img::before {
+            opacity: 1;
+        }
+        .product-img .pic-1 {
+            opacity: 0;
+        }
+        .product-img .pic-2 {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .social li {
+            opacity: 1;
+            transform: translateX(0);
+        } 
+    }
+    .product-img {
+        overflow: hidden;
+        position: relative;
+        &::before {
+            content: "";
+            background: rgba(0, 0, 0, 0.3);
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            transition: all 0.4s ease-out 0s;
+        }
+        a {
+            display: block;
+        }
+    }
+}
+
+.pic-1 {
+    opacity: 1;
+    backface-visibility: hidden;
+    transition: all 0.4s ease-out 0s;
+}
+
+.pic-2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    backface-visibility: hidden;
+    transform: scale(3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.8s ease-out 0s;
+}
+
+.product-featured-label {
+    content: "";
+    color: $text-color;
+    background-color: $hover-color;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.7;
+    text-align: center;
+    padding: 0 1rem;
+    position: absolute;
+    top: 0.7rem;
+    left: 0.7rem;
+    z-index: 3;
+
+}
+
+.social {
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0.8rem;
+    z-index: 4;
+    i {
+        font-size: 1.2rem;
+        color: $text-color;
+        padding: 1rem;
+        background-color: $hover-color;
+        &:hover {
+            background: #fff url(../images/pattern-grudge.png);
+            background-repeat: repeat;
+        }
+    }
+    li {
+        margin-bottom: 1rem;
+        opacity: 0;
+        transform: translateX(-60px);
+        transition: transform 0.03s ease-out 0s;
+    }
+}
+
+// PAGINATION
+.pagination-section {
+    background-color: $bg-even;
+    
+}
+.shop-pagination a {
+    font-size: 1.2rem;
+    color: $text-color;
+    padding: 0.5rem 1rem;
+    border: 1px solid $text-color;
+    margin: 0 0.3rem;
+    overflow: hidden;
+}
