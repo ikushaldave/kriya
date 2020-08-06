@@ -1,0 +1,123 @@
+.product_image {
+    width: 100%;
+}
+
+.product_crop {
+    height: 32rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product_image2 {
+    width: 10rem;
+}
+
+.product_crop2 {
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+}
+
+.product_txt_container {
+    position: relative;
+    text-align: center;
+    color: $bg-header;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0rem;
+}
+
+.product_img_txt {
+    position: absolute;
+    top: .75rem;
+    left: .75rem;
+    background-color: $hover-color;
+    padding: 0 auto;
+    padding-top: 2rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+.product_txt_green {
+    color: $bg-header;
+}
+
+.product_txt_txt {
+    color: $text-color;
+}
+
+.product_txt_red {
+    color: red;
+}
+
+.product_btn {
+    font-size: 1.3rem;
+    background-color: $bg-header;
+    padding: .3rem 1rem;
+    border-radius: 2rem;
+    color: whitesmoke;
+}
+
+.product_mar_top {
+    margin-top: 2rem;
+}
+
+.product_mar_top1 {
+    margin-top: .6rem;
+}
+
+.product_pad_top {
+    padding-top: 3rem;
+}
+
+.product_pad_bottom {
+    padding-bottom: 3rem;
+}
+
+.product_mar_top3 {
+    margin-top: 2.7rem;
+}
+
+.product_circle {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.product_green {
+    background-color: green;
+}
+
+.product_blue {
+    background-color: blue;
+}
+
+.product_red {
+    background-color: red;
+}
+
+.product_gray {
+    background-color: gray;
+}
+
+.product_marl_2 {
+    margin-left: 2rem;
+}
+
+.product_inline_block {
+    display: inline-block;
+}
+
+.product_input {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    margin-top: 10px;
+    color: #484338;
+    border: 1px solid #a58251;
+}
+
+.hover:hover {
+    color: $bg-header;
+}
