@@ -1,18 +1,19 @@
 .register-page,
 .contact-page {
 	form {
+		margin: 1rem 0;
 		input {
 			padding: 12px 18px;
 			width: 100%;
-			margin-top: 20px;
+			margin-bottom: 20px;
 			outline: none;
 			border: 1px solid $text-color;
 			background-color: transparent;
 		}
 
 		textarea {
+			font-family: inherit;
 			width: 100%;
-			margin-top: 15px;
 			padding: 12px 18px;
 			outline: none;
 			background-color: transparent;

@@ -1,12 +1,16 @@
-
 .contact-page {
 	.contact-main-title-bg {
-		background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/contact-bg.jpg);
+		background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+			url(../images/contact-bg.jpg);
 	}
 	.map-section {
 		background-color: $bg-even;
 		position: relative;
-		padding: 10rem 0;
+		flex-grow: 1;
+	}
+
+	main {
+		position: relative;
 	}
 
 	.contact-hero {
@@ -45,8 +49,11 @@
 		background-color: $bg-odd;
 	}
 
+	.address-wrap {
+		display: flex;
+	}
+
 	.country-card {
-		// background-color: rgb(63, 207, 63);
 		background: #cec4ac url(../images/About/floral-bg-parallax.png);
 		background-repeat: repeat;
 		background-position: right;
@@ -55,7 +62,7 @@
 		padding: 45px;
 		color: $text-color;
 		position: absolute;
-		top: 52%;
+		top: 40px;
 		left: 15%;
 		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 
@@ -75,17 +82,22 @@
 			i {
 				background-color: transparent;
 				color: black;
-				padding: 15px;
-				border-radius: 50%;
-				height: 46px;
-				margin-right: 25px;
+				display: inline-block;
+				font-size: 1.5rem;
+				margin-right: 5rem;
 			}
 		}
 	}
 
 	@media only screen and (max-width: 900px) {
+		.address-wrap {
+			flex-direction: column;
+		}
+
 		.country-card {
-			display: none;
+			order: -1;
+			position: static;
+			width: 100%;
 		}
 	}
 }
