@@ -15,9 +15,9 @@
 }
 
 .img-responsive {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 a {
@@ -40,7 +40,6 @@ a {
 .text-left {
 	text-align: left;
 }
-
 
 .text-right {
 	text-align: right;
@@ -115,6 +114,10 @@ a {
 	margin: 1rem;
 }
 
+.mt-05 {
+	margin-top: 0.5rem;
+}
+
 // padding
 
 .pr-2 {
@@ -155,6 +158,18 @@ a {
 
 .ptb-1 {
 	padding: 1rem 0;
+}
+
+.ptb-5 {
+	padding: 5rem;
+}
+
+.ptb-6 {
+	padding: 6rem 0;
+}
+
+.ptb-7 {
+	padding: 7rem 0;
 }
 
 // decor similar to copyright part refer footer html how to use that

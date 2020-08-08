@@ -1,7 +1,7 @@
 
 # ![](assets/images/logo-dark.png "Kriya icon") 
 
-**[STACK][s] | [CONTRIB][c] | [VERSION][v] | [AUTHOR][a] | [LICENSE][l] | [ACKNOWLEDGE][ack]**
+**[STACK][s] | [CONTRIB][c] | [AUTHOR][a] | [LICENSE][l] | [ACKNOWLEDGE][ack]**
 
 ## [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
