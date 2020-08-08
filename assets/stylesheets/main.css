@@ -2349,11 +2349,12 @@ a {
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
   border: 1px solid #484334;
-  border-radius: .5rem; }
-
-.details_btn:hover {
   background-color: #7e8446;
   color: white; }
+
+.details_btn:hover {
+  background-color: #ffda6b;
+  color: #484334; }
 
 .details_btn2 {
   font-size: 1rem;
@@ -2499,13 +2500,11 @@ a {
     display: none; } }
 /*---------------------------------*/
 .details_form_input {
+  padding: 12px 18px;
   width: 100%;
-  padding: 12px;
+  margin-top: 20px;
+  outline: none;
   border: 1px solid #484334;
-  border-radius: 4px;
-  resize: vertical; }
-
-.details_form_input::placeholder {
-  color: #484334; }
+  background-color: transparent; }
 
 /*# sourceMappingURL=main.css.map */
