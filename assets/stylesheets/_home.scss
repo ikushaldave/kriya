@@ -600,27 +600,11 @@
 
 // Social Icon
 
-.floating-social-icon {
-	position: fixed;
-	top: 38%;
-	left: 0;
-	z-index: 20;
-	background-color: rgba($bg-header, 0.9);
-	border: 1px solid $text-color;
-	flex-flow: column wrap;
-
+.footer-social-icon {
 	a {
-		color: $text-color;
+		color: #d4ad76;
 		padding: 0.65rem;
-		border: 1px solid $text-color;
-		border-collapse: collapse;
-		transition: all 0.5s ease;
-		&:hover {
-			background-color: $hover-color;
-			i {
-				transform: scale(1.3);
-			}
-		}
+		margin: 0.5rem;
 	}
 }
 
@@ -805,19 +789,4 @@
 	.col-4 {
 		grid-template-columns: repeat(1, 1fr);
 	}
-
-	.floating-social-icon {
-		// top: 45%;
-	}
-	// .floating-social-icon {
-	// 	flex-flow: row wrap;
-	// 	bottom: 0;
-	// 	right: 0;
-	// 	top: unset;
-
-	// 	a {
-	// 		text-align: center;
-	// 		flex-grow: 1;
-	// 	}
-	// }
 }
