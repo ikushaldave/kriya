@@ -54,13 +54,41 @@ a {
 	text-transform: uppercase;
 	font-family: $body-font;
 	font-size: 1rem;
-	font-weight: 500;
+	font-weight: 700;
 	padding: 0.6rem 1.25rem;
 	margin-top: 10px;
 	color: #484338;
 	border: 1px solid #a58251;
+	overflow: hidden;
 }
-
+.primary-btn {
+	color: #484338;
+	border-color: #a58251;;
+	background-color: #fff;
+	margin-top: 0.6rem;
+	background-image: url(../images/pattern-grudge.png);
+	background-repeat: repeat;
+	position: relative;
+	transition: all 0.6s;
+	z-index: 1;
+	&:hover {
+		border-color: #a58251;
+		color: #484338;
+		background-color: $hover-color;
+	}
+	@media screen and (max-width: 1024px) {
+		margin: 0 1rem;
+	}
+}
+.about-secondary-btn {
+	background-color: #484338;
+	color: #f2e9d2;
+	margin-top: 0.6rem;
+	margin-right: 2rem;
+	@media screen and (max-width: 1024px) {
+		margin: 0 1rem 0.8rem;
+	}
+}
 /* 
     ========== margins ===========
     mt - margin-top

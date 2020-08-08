@@ -194,11 +194,50 @@ a {
   text-transform: uppercase;
   font-family: "Rosario", sans-serif;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700;
   padding: 0.6rem 1.25rem;
   margin-top: 10px;
   color: #484338;
   border: 1px solid #a58251;
+  overflow: hidden;
+}
+
+.primary-btn {
+  color: #484338;
+  border-color: #a58251;
+  background-color: #fff;
+  margin-top: 0.6rem;
+  background-image: url(../images/pattern-grudge.png);
+  background-repeat: repeat;
+  position: relative;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  z-index: 1;
+}
+
+.primary-btn:hover {
+  border-color: #a58251;
+  color: #484338;
+  background-color: #ffda6b;
+}
+
+@media screen and (max-width: 1024px) {
+  .primary-btn {
+    margin: 0 1rem;
+  }
+}
+
+.about-secondary-btn {
+  background-color: #484338;
+  color: #f2e9d2;
+  margin-top: 0.6rem;
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-secondary-btn {
+    margin: 0 1rem 0.8rem;
+  }
 }
 
 /* 
@@ -548,11 +587,50 @@ a {
   text-transform: uppercase;
   font-family: "Rosario", sans-serif;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700;
   padding: 0.6rem 1.25rem;
   margin-top: 10px;
   color: #484338;
   border: 1px solid #a58251;
+  overflow: hidden;
+}
+
+.primary-btn {
+  color: #484338;
+  border-color: #a58251;
+  background-color: #fff;
+  margin-top: 0.6rem;
+  background-image: url(../images/pattern-grudge.png);
+  background-repeat: repeat;
+  position: relative;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  z-index: 1;
+}
+
+.primary-btn:hover {
+  border-color: #a58251;
+  color: #484338;
+  background-color: #ffda6b;
+}
+
+@media screen and (max-width: 1024px) {
+  .primary-btn {
+    margin: 0 1rem;
+  }
+}
+
+.about-secondary-btn {
+  background-color: #484338;
+  color: #f2e9d2;
+  margin-top: 0.6rem;
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-secondary-btn {
+    margin: 0 1rem 0.8rem;
+  }
 }
 
 /* 
@@ -1176,12 +1254,14 @@ a {
   margin-left: 1rem;
   background-color: #ffda6b;
   color: #484334;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  background-image: url(../images/pattern-grudge.png);
+  background-repeat: repeat;
 }
 
 .call-to-action .cta-btn:hover {
-  background-color: transparent;
+  background-color: #fff;
 }
 
 .call-to-action .cta-btn i {
@@ -1876,78 +1956,6 @@ a {
   }
 }
 
-.about-us .btn {
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 0.8rem 1.2rem;
-  border: 1px solid transparent;
-  overflow: hidden;
-}
-
-.about-us .primary-btn {
-  color: #484338;
-  border-color: #a58251;
-  background-color: #ffda6b;
-  margin-top: 0.6rem;
-  background-image: url(../images/pattern-grudge.png);
-  background-repeat: repeat;
-  position: relative;
-  -webkit-transition: all 0.03s;
-  transition: all 0.03s;
-  z-index: 1;
-}
-
-.about-us .primary-btn:hover {
-  border-color: #a58251;
-  color: #484338;
-}
-
-.about-us .primary-btn::before {
-  background-image: url(../images/pattern-grudge.png);
-  background-repeat: repeat;
-  background-color: #fff;
-  -webkit-transition: all 0.03s;
-  transition: all 0.03s;
-  -webkit-transform: rotate(0deg) scaleX(3);
-          transform: rotate(0deg) scaleX(3);
-  -webkit-transform-origin: 0% 100%;
-          transform-origin: 0% 100%;
-  content: "";
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-}
-
-.about-us .primary-btn:hover::before {
-  height: 0%;
-  -webkit-transform: rotate(0deg) scaleX(1.2);
-          transform: rotate(0deg) scaleX(1.2);
-  opacity: 1;
-}
-
-@media screen and (max-width: 1024px) {
-  .about-us .primary-btn {
-    margin: 0 1rem;
-  }
-}
-
-.about-us .about-secondary-btn {
-  background-color: #484338;
-  color: #f2e9d2;
-  margin-top: 0.6rem;
-  margin-right: 2rem;
-}
-
-@media screen and (max-width: 1024px) {
-  .about-us .about-secondary-btn {
-    margin: 0 1rem 0.8rem;
-  }
-}
-
 .about-main-title-bg {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/About/breadcrumb-img-about.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/About/breadcrumb-img-about.jpg);
@@ -2016,6 +2024,18 @@ a {
   }
   .about-kriya .achievement {
     margin-top: 3rem;
+  }
+  .about-kriya .ctc-text {
+    padding: 2rem 1rem;
+  }
+  .about-kriya .border-center {
+    min-width: 75%;
+    margin: 0 auto;
+  }
+  .about-kriya .border-holder-color {
+    width: 80%;
+    margin: 0 auto;
+    position: unset;
   }
 }
 
@@ -2177,8 +2197,8 @@ a {
 }
 
 .ico-img {
-  margin: 0 0.8rem;
-  height: 24px;
+  margin: 0 1rem !important;
+  width: 21% !important;
 }
 
 .border-margin {
@@ -2300,6 +2320,10 @@ a {
   }
   .about-section-features .about-ctc-left .ctc-text {
     padding: 2rem 1rem;
+  }
+  .about-section-features .about-ctc-left .border-center {
+    min-width: 75%;
+    margin: 0 auto;
   }
   .about-section-features .about-ctc-left .border-holder-color {
     width: 80%;

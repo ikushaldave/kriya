@@ -4,65 +4,7 @@
             text-align: right;
         }
     }
-    .btn {
-        text-transform: uppercase;
-        font-size: 1rem;
-        font-weight: 700;
-        padding: 0.8rem 1.2rem;
-        border: 1px solid transparent;
-        overflow: hidden;
-
-    }
-    .primary-btn {
-        color: #484338;
-        border-color: #a58251;;
-        background-color: $hover-color;
-        margin-top: 0.6rem;
-        background-image: url(../images/pattern-grudge.png);
-        background-repeat: repeat;
-        position: relative;
-        transition: all 0.03s;
-        z-index: 1;
-        &:hover {
-            border-color: #a58251;
-            color: #484338;
-        }
-        &::before {
-            background-image: url(../images/pattern-grudge.png);
-            background-repeat: repeat;
-            background-color: #fff;
-            transition: all 0.03s;
-            transform: rotate(0deg) scaleX(3);
-            transform-origin: 0% 100%;
-            content: "";
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            z-index: -1;
-        }
-        &:hover::before {
-            height: 0%;
-            transform: rotate(0deg) scaleX(1.2);
-            opacity: 1;
-        }
-        @media screen and (max-width: 1024px) {
-            margin: 0 1rem;
-        }
-    }
-    .about-secondary-btn {
-        background-color: #484338;
-        color: #f2e9d2;
-        margin-top: 0.6rem;
-        margin-right: 2rem;
-        @media screen and (max-width: 1024px) {
-            margin: 0 1rem 0.8rem;
-        }
-    }
 }
-
-
 
 .about-main-title-bg {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/About/breadcrumb-img-about.jpg);
@@ -119,8 +61,26 @@
             // text-align: center;
             margin-top: 3rem;
         }
+    
+        .ctc-text {
+            padding: 2rem 1rem;
+        }
+        .border-center {
+            min-width: 75%;
+            margin: 0 auto;
+        }
+        .border-holder-color {
+            width: 80%;
+            margin: 0 auto;
+            position: unset;
+
+        }
+        
+    
     }
 }
+    
+
 .section-sub-heading {
     font-family: $heading-font;
     letter-spacing: 0.3rem;
@@ -269,9 +229,11 @@
 .team-kriya {
     background-color: $bg-even;
 }
+
 .ico-img {
-    margin: 0 0.8rem;
-    height: 24px;
+    margin: 0 1rem!important;
+    width: 21%!important;
+    // height: 24px;
     
 }
 .border-margin {
@@ -376,6 +338,10 @@
             text-align: center;
             .ctc-text {
                 padding: 2rem 1rem;
+            }
+            .border-center {
+                min-width: 75%;
+                margin: 0 auto;
             }
             .border-holder-color {
                 width: 80%;
