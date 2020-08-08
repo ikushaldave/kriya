@@ -1,8 +1,6 @@
 
 # ![](assets/images/logo-dark.png "Kriya icon") 
 
-**[STACK][s] | [CONTRIB][c] | [AUTHOR][a] | [LICENSE][l] | [ACKNOWLEDGE][ack]**
-
 ## [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/AltCampus/kriya/issues)
 
 Kriya is a Yoga and Spiritual Wellness theme website. The layout is created for Yoga trainer, Meditation centers, Asana Instructor, Physical & Mental wellness center, Weight loss centers, Fitness centers, Indian culture & Heritage development centers.
