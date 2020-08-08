@@ -2,7 +2,10 @@
 .contact-page {
 	form {
 		margin: 1rem 0;
-		input {
+		input,
+		textarea {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 0.9rem;
 			padding: 12px 18px;
 			width: 100%;
 			margin-bottom: 20px;
@@ -11,14 +14,6 @@
 			background-color: transparent;
 		}
 
-		textarea {
-			font-family: inherit;
-			width: 100%;
-			padding: 12px 18px;
-			outline: none;
-			border: 1px solid $text-color;
-			background-color: transparent;
-		}
 		button {
 			color: white;
 			background-color: $bg-header;

@@ -270,8 +270,16 @@ a {
   padding: 1rem 0;
 }
 
+.ptb-5 {
+  padding: 5rem;
+}
+
 .ptb-6 {
   padding: 6rem 0;
+}
+
+.ptb-7 {
+  padding: 7rem 0;
 }
 
 .decor {
@@ -632,8 +640,16 @@ a {
   padding: 1rem 0;
 }
 
+.ptb-5 {
+  padding: 5rem;
+}
+
 .ptb-6 {
   padding: 6rem 0;
+}
+
+.ptb-7 {
+  padding: 7rem 0;
 }
 
 .decor {
@@ -936,6 +952,16 @@ a {
 .copyright small {
   display: block;
   font-size: 1.1rem;
+}
+
+.footer-social-icon a {
+  color: #d4ad76;
+  padding: 0.5rem;
+  margin: 0.5rem 1rem;
+}
+
+.footer-social-icon i {
+  margin-right: 0;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1631,12 +1657,6 @@ a {
     right: 0;
     opacity: 1;
   }
-}
-
-.footer-social-icon a {
-  color: #d4ad76;
-  padding: 0.65rem;
-  margin: 0.5rem;
 }
 
 .preloader {
@@ -3435,20 +3455,14 @@ a {
 }
 
 .register-page form input,
-.contact-page form input {
+.register-page form textarea,
+.contact-page form input,
+.contact-page form textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
   padding: 12px 18px;
   width: 100%;
   margin-bottom: 20px;
-  outline: none;
-  border: 1px solid #484334;
-  background-color: transparent;
-}
-
-.register-page form textarea,
-.contact-page form textarea {
-  font-family: inherit;
-  width: 100%;
-  padding: 12px 18px;
   outline: none;
   border: 1px solid #484334;
   background-color: transparent;
@@ -3531,7 +3545,7 @@ a {
   padding: 45px;
   color: #484334;
   position: absolute;
-  top: 40px;
+  top: 55px;
   left: 12%;
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);

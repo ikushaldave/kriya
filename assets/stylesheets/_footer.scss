@@ -68,6 +68,20 @@
 	}
 }
 
+// Social Icon
+
+.footer-social-icon {
+	a {
+		color: #d4ad76;
+		padding: 0.5rem;
+		margin: 0.5rem 1rem;
+	}
+
+	i {
+		margin-right: 0;
+	}
+}
+
 .footer {
 	@media screen and (max-width: 1024px) {
 		.col-4 {
