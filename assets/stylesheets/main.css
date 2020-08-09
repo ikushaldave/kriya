@@ -3068,10 +3068,6 @@ a {
   height: 3rem;
 }
 
-.course_image {
-  width: 100%;
-}
-
 .course_crop {
   height: 30rem;
   width: 100%;
@@ -3160,33 +3156,15 @@ a {
 }
 
 .course_btn {
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 500;
   padding: 1rem 2rem;
-  margin-top: 10px;
   color: white;
   background-color: #7e8446;
-  border: 1px solid #a58251;
   margin-top: 2rem;
 }
 
 .course_btn:hover {
   color: #484334;
   background-color: #ffda6b;
-}
-
-.course_parallax {
-  background-image: url("../images/Blog/course.jpeg");
-  min-height: 15rem;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.course_bg_odd {
-  background-color: #f5f0e3;
 }
 
 .course_bg_color,

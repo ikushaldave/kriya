@@ -23,9 +23,9 @@
 	height: 3rem;
 }
 
-.course_image {
-	width: 100%;
-}
+// .course_image {
+// 	width: 100%;
+// }
 
 .course_crop {
 	height: 30rem;
@@ -99,14 +99,14 @@
 }
 
 .course_btn {
-	text-transform: uppercase;
-	font-size: 1rem;
-	font-weight: 500;
+	// text-transform: uppercase;
+	// font-size: 1rem;
+	// font-weight: 500;
 	padding: 1rem 2rem;
-	margin-top: 10px;
+	// margin-top: 10px;
 	color: white;
 	background-color: $bg-header;
-	border: 1px solid #a58251;
+	// border: 1px solid #a58251;
 	margin-top: 2rem;
 }
 
@@ -115,18 +115,18 @@
 	background-color: $hover-color;
 }
 
-.course_parallax {
-	background-image: url("../images/Blog/course.jpeg");
-	min-height: 15rem;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+// .course_parallax {
+// 	background-image: url("../images/Blog/course.jpeg");
+// 	min-height: 15rem;
+// 	background-attachment: fixed;
+// 	background-position: center;
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+// }
 
-.course_bg_odd {
-	background-color: $bg-odd;
-}
+// .course_bg_odd {
+// 	background-color: $bg-odd;
+// }
 
 .course_bg_color,
 .course_bg_even {
