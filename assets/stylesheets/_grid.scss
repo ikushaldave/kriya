@@ -70,3 +70,23 @@
 .span-3 {
 	@include span(3);
 }
+
+// Grid Gap
+
+.gap-2 {
+	gap: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+	.col-2 {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.col-3 {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.col-4 {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}

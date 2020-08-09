@@ -12,7 +12,7 @@
 <body>
 
 </body>
-<main class="course_bg_even">
+<main class="course_bg_even padding">
 
     <!--===================== Header ====================-->
     <header class="header">
@@ -63,13 +63,13 @@
                     <h3 class="details_txt_red details_mar_top1">20% Off</h3>
                 </div>
                 <div class="details_mar_top">
-                    <h4>Colors</h4>
+                    <!-- <h4>Colors</h4>
                     <div class="flex details_mar_top1">
                         <div class=" details_circle details_green">&nbsp;</div>
                         <div class="details_marl_2 details_circle details_blue"></div>
                         <div class="details_marl_2 details_circle details_red"></div>
                         <div class="details_marl_2 details_circle details_gray"></div>
-                    </div>
+                    </div> -->
                     <div class="details_mar_top">
                         <h4>Select size</h4>
                         <div class="flex details_mar_top1">
@@ -79,14 +79,15 @@
                             <div class="details_marl_2">150ml</div>
                         </div>
                     </div>
-                    <div class="details_mar_top flex">
-                        <a href="#" class="details_txt_txt details_btn2">
-                            <h5>ADD TO WISHLIST</h5>
-                        </a>
-                        <a href="#" class="details_txt_txt hover details_btn2 details_marl_2">
-                            <h5> ADD TO BAG &nbsp;&nbsp;<i class="fas fa-shopping-bag"></i></h5>
-                        </a>
+                    <div class="buttons details_mar_top flex">
+                        <a class="btn about-secondary-btn" href="#">Add to Wishlist &nbsp;&nbsp;<i class="far fa-heart"></i></a>
+                        <a class="btn home-secondary-btn" href="#">Add to bag &nbsp;&nbsp;<i class="fas fa-shopping-cart"></i></a>
                     </div>
+                    <!-- <div class="details_mar_top flex">
+                        <a href="#" class="btn primary-btn">Add to Wishlist</a>
+                        <a href="#" class="btn primary-btn">ADD TO BAG &nbsp;&nbsp;<i class="fas fa-shopping-bag"></i>
+                        </a>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -96,15 +97,15 @@
         <div class="grid col-2 container blog_col-2">
             <div class="grid col-3 blog_col-3  blog_pad_2">
                 <div class="details_image2">
-                    <img class="details_crop2 details_box_border" src="assets/images/Shop/orange-extract-soap.jpg"
+                    <img class="img-responsive details_box_border" src="assets/images/Shop/orange-extract-soap.jpg"
                         alt="">
                 </div>
                 <div class="details_image2">
-                    <img class="details_crop2 details_box_border" src="assets/images/Shop/white-porcelain-perfume.jpg"
+                    <img class="img-responsive details_box_border" src="assets/images/Shop/white-porcelain-perfume.jpg"
                         alt="">
                 </div>
                 <div class="details_image2">
-                    <img class="details_crop2 details_box_border" src="assets/images/Shop/yoga-bath-combo-pack.jpg"
+                    <img class="img-responsive details_box_border" src="assets/images/Shop/yoga-bath-combo-pack.jpg"
                         alt="">
                 </div>
             </div>
@@ -248,9 +249,23 @@
         </div>
 
     </section>
-    <section class=" course_bg_even">
-        <div class="grid col-2 container blog_col-2 ">
-            <div class="blog_pad_2">
+    <section class=" course_bg_even padding">
+        <div class="container blog_col-2 product-pg">
+            <h4 class="text-center">Your Review</h4>
+                <h6 class="text-center">Your email address will not be published</h6>
+               
+            <form>
+                <div class="icon flex">
+                    <input style="margin-right: 1rem;" type="text" placeholder="Name">
+                    <input type="email" placeholder="Email"></input>
+                </div>
+                <textarea rows="8" cols="70" placeholder="Your Review"></textarea>
+                <div class="text-center">
+                    <button class='btn primary-btn'>Submit</button>
+                </div>
+                
+            </form>
+            <!-- <div class="blog_pad_2">
                 <h4 class="">Your Review</h4>
                 <h6 class="details_mar_top1">Your email address will not be published</h6>
                 <input class="details_form_input" type="text" id="name" required placeholder="Name">
@@ -261,15 +276,15 @@
                     <textarea class="details_form_input" name="review" id="review" cols="20" rows="5"
                         placeholder="Your Review"></textarea>
                 </div>
-            </div>
+            </div> -->
 
     </section>
 
-    <section class=" course_bg_even details_pad_bottom">
+    <!-- <section class=" course_bg_even details_pad_bottom">
         <div class="grid col-1 container blog_container blog_col-1 ">
             <button class="details_btn blog_pad_2">Submit</button>
         </div>
-    </section>
+    </section> -->
     <!--========================== Footer ==================-->
     <footer class="footer">
         <div class="container">

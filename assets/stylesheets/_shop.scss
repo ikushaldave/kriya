@@ -1,54 +1,4 @@
-.shop {
-	.btn {
-		text-transform: uppercase;
-		font-size: 1rem;
-		font-weight: 700;
-		padding: 0.8rem 1.2rem;
-		border: 1px solid transparent;
-		overflow: hidden;
-	}
-	.primary-btn {
-		color: #484338;
-		border-color: #a58251;
-		background-color: $hover-color;
-		margin-top: 0.6rem;
-		background-image: url(../images/pattern-grudge.png);
-		background-repeat: repeat;
-		position: relative;
-		transition: all 0.03s;
-		z-index: 1;
-		&:hover {
-			border-color: #a58251;
-			color: #484338;
-		}
-		&::before {
-			background-image: url(../images/pattern-grudge.png);
-			background-repeat: repeat;
-			background-color: #fff;
-			transition: all 0.03s;
-			transform: rotate(0deg) scaleX(3);
-			transform-origin: 0% 100%;
-			content: "";
-			height: 100%;
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			z-index: -1;
-		}
-		&:hover::before {
-			height: 0%;
-			transform: rotate(0deg) scaleX(1.2);
-			opacity: 1;
-		}
-	}
-	.about-secondary-btn {
-		background-color: #484338;
-		color: #f2e9d2;
-		margin-top: 0.6rem;
-		margin-right: 2rem;
-	}
-}
+
 // SHOP TITLE
 .shop-main-title-bg {
 	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -108,22 +58,28 @@
 			padding: 0.5rem 0 0.5rem 0.5rem;
 		}
 	}
+	@media screen and (max-width: 1024px) {
+		padding-bottom: 2rem;
+	}
 }
 
 // PRODUCT CARDS
 .ecommerce-product-cards {
 	background-color: $bg-even;
 }
+
 .cards-wrapper {
-	padding: 3rem 0;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 	@media screen and (max-width: 1024px) {
 		padding: unset;
 	}
 }
 .product-card {
 	background-color: $bg-even;
+	margin-top: 2rem;
 	@media screen and (max-width: 1024px) {
 		padding: 1rem;
+		margin-top: unset;
 	}
 }
 .card-pattern-bg {

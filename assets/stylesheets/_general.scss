@@ -11,7 +11,7 @@
 }
 
 .padding {
-	padding: 5rem 0;
+	padding: 4rem 0;
 }
 
 .img-responsive {
@@ -69,7 +69,7 @@ a {
 	background-repeat: repeat;
 	position: relative;
 	transition: all 0.6s;
-	z-index: 1;
+	align-self: flex-start;
 	&:hover {
 		border-color: #a58251;
 		color: #484338;
@@ -87,6 +87,19 @@ a {
 	@media screen and (max-width: 1024px) {
 		margin: 0 1rem 0.8rem;
 	}
+}
+.home-secondary-btn {
+	background-color: $bg-header;
+	color: #f2e9d2;
+	margin-top: 0.6rem;
+	margin-right: 2rem;
+	@media screen and (max-width: 1024px) {
+		margin: 0 1rem 0.8rem;
+	}
+}
+
+.fa-chevron-right {
+	margin-left: 0.5rem
 }
 /* 
     ========== margins ===========
@@ -117,7 +130,9 @@ a {
 .mt-05 {
 	margin-top: 0.5rem;
 }
-
+.mb-1 {
+	margin-bottom: 1rem;
+}
 // padding
 
 .pr-2 {

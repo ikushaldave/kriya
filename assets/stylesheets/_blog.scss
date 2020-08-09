@@ -1,5 +1,6 @@
 .blog-main-title-bg {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/Blog/blog-bg.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url(../images/Blog/blog-bg.jpg);
 }
 
 .blog_image {
@@ -152,7 +153,6 @@
 .pagination {
 	text-align: center;
 	display: inline-block;
-	padding: 2rem 0 4rem;
 }
 
 .pagination a {
@@ -174,19 +174,7 @@
 	background-color: $hover-color;
 }
 
-@media screen and (max-width: 767px) {
-	.blog_col-1 {
-		grid-template-columns: repeat(1, 1fr);
-	}
-
-	.blog_col-2 {
-		grid-template-columns: repeat(1, 1fr);
-	}
-
-	.blog_col-3 {
-		grid-template-columns: repeat(1, 1fr);
-	}
-
+@media screen and (max-width: 1024px) {
 	.blog_crop {
 		height: 20rem;
 	}
@@ -226,43 +214,5 @@
 
 	.blog_width_90 {
 		width: 100%;
-	}
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-	.blog_col-1 {
-		grid-template-columns: repeat(1, 1fr);
-	}
-
-	.blog_col-2 {
-		grid-template-columns: repeat(1, 1fr);
-	}
-
-	.blog_col-3 {
-		grid-template-columns: repeat(1, 1fr);
-	}
-
-	.blog_crop {
-		height: 33rem;
-	}
-
-	.blog_crop2 {
-		height: 33rem;
-	}
-
-	.blog_pad_2 {
-		padding: 0.5rem;
-	}
-
-	.mob_mar_top {
-		margin-top: 3rem;
-	}
-
-	.blog_margin_top {
-		margin-top: 0rem;
-	}
-
-	.blog_bg_even {
-		background-color: $bg-even;
 	}
 }
