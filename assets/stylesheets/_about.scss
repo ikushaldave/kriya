@@ -1,10 +1,4 @@
-.about-us {
-    .buttons {
-        @media screen and (max-width: 1024px) {
-            text-align: right;
-        }
-    }
-}
+
 
 .about-main-title-bg {
 	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -294,19 +288,22 @@
 	text-transform: uppercase;
 	font-family: $heading-font;
 }
-// About-section-ctc
-
-.about-section-features {
-    background: #ece6d7 url(../images/About/floral-bg-parallax.png);
+// About-section-cta
+.about-cta {
+	background: #ece6d7 url(../images/About/floral-bg-parallax.png);
+}
+.call-to-action {
+    
     background-repeat: repeat;
     background-position: right;
-    background-size: contain;
+	background-size: cover;
+	background-position: 0 -80px;
 
-    .about-ctc-left {
+    .about-cta-left {
         background-color: $bg-header;
         text-align: right;
         padding-right: 1rem;
-        .ctc-heading {
+        .cta-heading {
             font-size: 3.2rem;
             font-weight: 400;
             color: #e5dbc1;
@@ -321,7 +318,7 @@
             text-transform: uppercase;
             font-family: $heading-font;
         }
-        .ctc-text {
+        .cta-text {
             color: $bg-odd;
             padding-left: 9rem;
         }
@@ -333,10 +330,11 @@
             .vertical-border {
                 border-top: 1px solid $bg-odd;
             }
-        }
+		}
+
         @media screen and (max-width: 1024px) {
             text-align: center;
-            .ctc-text {
+            .cta-text {
                 padding: 2rem 1rem;
             }
             .border-center {
@@ -348,7 +346,12 @@
                 margin: 0 auto;
                 position: unset;
 
-            }
+			}
+			.buttons {
+				@media screen and (max-width: 1024px) {
+					text-align: right;
+				}
+			}
         }
     
     }
@@ -538,6 +541,10 @@
 
 .benefit-cols {
 	margin-top: 7rem;
+	@media screen and (max-width: 1024px) {
+		padding: 4rem 0;
+		margin-top: unset;
+	}
 	.benefit {
 		// width: 25%;
 		padding: 2rem;
@@ -548,7 +555,7 @@
 			margin-bottom: 1.4rem;
 		}
 		@media screen and (max-width: 1024px) {
-			margin-bottom: 7rem;
+			// margin-bottom: 4rem;
 		}
 	}
 }
