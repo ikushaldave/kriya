@@ -793,10 +793,11 @@ a {
 }
 
 .header .container {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: relative;
+}
+
+.header .active {
+  color: #ffda6b;
 }
 
 .nav a {
@@ -888,6 +889,10 @@ a {
   }
   .header .nav {
     display: none;
+  }
+  .header .nav a {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
   }
   .header .logo-wrapper {
     margin: 0;
@@ -3712,7 +3717,7 @@ a {
 .details_btn2 {
   font-size: 1rem;
   background-color: #ffda6b;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   color: #ff4b44;
   border: 1px solid #484334;
 }
@@ -3727,11 +3732,11 @@ a {
 }
 
 .details_mar_top1 {
-  margin-top: .6rem;
+  margin-top: 0.6rem;
 }
 
 .details_mar_top_half {
-  margin-top: .45rem;
+  margin-top: 0.45rem;
 }
 
 .details_pad_top {
@@ -3822,11 +3827,11 @@ a {
 .details_review_side {
   float: left;
   width: 15%;
-  margin-top: .3rem;
+  margin-top: 0.3rem;
 }
 
 .details_review_middle {
-  margin-top: .3rem;
+  margin-top: 0.3rem;
   float: left;
   width: 70%;
 }
@@ -3851,13 +3856,13 @@ a {
 .details_review_bar-5 {
   width: 60%;
   height: 0.8rem;
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
 
 .details_review_bar-4 {
   width: 30%;
   height: 0.8rem;
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 .details_review_bar-3 {
