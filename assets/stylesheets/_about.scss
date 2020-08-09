@@ -393,7 +393,7 @@
 
 .acc-container label:before {
 	font-size: 1.2rem;
-	font-family: "FontAwesome";
+	font-family: "Font Awesome 5 Pro";
 	content: "\f067";
 	font-weight: bolder;
 	margin-right: 0.5rem;
@@ -404,7 +404,7 @@
 }
 
 .acc-container input:checked + label:before {
-	font-family: "FontAwesome";
+	font-family: "Font Awesome 5 Pro";
 	content: "\f068";
 	transition: 0.5s;
 }

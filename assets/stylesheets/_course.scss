@@ -1,5 +1,6 @@
 .course-main-title-bg {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/Courses/course-bg.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url(../images/Courses/course-bg.jpg);
 }
 
 .course_txt_container {
@@ -36,13 +37,6 @@
 	border: 1px solid rgba(72, 67, 52, 0.3);
 	border-radius: 0.5rem;
 }
-
-// .container {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	height: 100vh;
-// }
 
 .course_container {
 	display: flex;
