@@ -56,4 +56,4 @@ Please read CONTRIBUTING.md for details on our code of conduct, and the process 
 
 -   SVG's: [Freepik](https://www.freepik.com/)
 
--   Images: Images from Layout's we took to build
+-   Images: [Kriya Template](https://preview.themeforest.net/item/adhi-yog-meditation-wordpress-theme/full_screen_preview/25913177)
