@@ -1385,43 +1385,6 @@ a {
   position: relative;
 }
 
-.features-courses .course .sub-inner {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
-  bottom: 2rem;
-  right: 2rem;
-  border: 1px solid #7e8446;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.features-courses .course:hover .sub-inner {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.features-courses .course .sub-outer {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 1px solid #d4ad76;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.features-courses .course:hover .sub-outer {
-  top: 2rem;
-  left: 2rem;
-  bottom: 2rem;
-  right: 2rem;
-}
-
 .features-courses .course:hover .read-more {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(126, 132, 70, 0.8)), color-stop(50%, rgba(255, 218, 107, 0.8)));
   background: linear-gradient(rgba(126, 132, 70, 0.8) 50%, rgba(255, 218, 107, 0.8) 50% 50%);
@@ -1431,8 +1394,6 @@ a {
 .features-courses .inner {
   background-color: #fff;
   position: relative;
-  top: -5px;
-  left: -5px;
   z-index: 2;
 }
 
@@ -1472,10 +1433,10 @@ a {
 
 .features-courses .read-more {
   position: absolute;
-  top: -5px;
-  bottom: 5px;
-  left: -5px;
-  right: 5px;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
   opacity: 0;
   z-index: 2;
   -webkit-transition: all 1s ease-in-out;

@@ -201,7 +201,6 @@
 	}
 }
 
-
 // Courses
 
 .features-courses {
@@ -212,41 +211,6 @@
 
 	.course {
 		position: relative;
-
-		& .sub-inner {
-			position: absolute;
-			top: 2rem;
-			left: 2rem;
-			bottom: 2rem;
-			right: 2rem;
-			border: 1px solid $bg-header;
-			transition: all 0.5s ease-in-out;
-		}
-
-		&:hover .sub-inner {
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-		}
-
-		& .sub-outer {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			border: 1px solid #d4ad76;
-			transition: all 0.5s ease-in-out;
-		}
-
-		&:hover .sub-outer {
-			top: 2rem;
-			left: 2rem;
-			bottom: 2rem;
-			right: 2rem;
-		}
 
 		&:hover .read-more {
 			background: linear-gradient(
@@ -260,8 +224,6 @@
 	.inner {
 		background-color: #fff;
 		position: relative;
-		top: -5px;
-		left: -5px;
 		z-index: 2;
 	}
 
@@ -299,10 +261,10 @@
 
 	.read-more {
 		position: absolute;
-		top: -5px;
-		bottom: 5px;
-		left: -5px;
-		right: 5px;
+		top: 10px;
+		bottom: 10px;
+		left: 10px;
+		right: 10px;
 		opacity: 0;
 		z-index: 2;
 		transition: all 1s ease-in-out;
